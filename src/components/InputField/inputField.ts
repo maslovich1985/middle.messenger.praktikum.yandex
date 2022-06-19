@@ -1,7 +1,8 @@
-import Block from '../../utils/Block';
-import '../../utils/styles/styles.less';
+// import template from './button.hbs';
+import Block from '../../common/Block';
+import '../../common/styles/styles.less';
 
-export type TInputType = 'text' | 'tel' | 'password' | 'email';
+export type TInputType = 'email' | 'text' | 'tel' | 'password';
 
 interface IInputField {
   labelText?: string;

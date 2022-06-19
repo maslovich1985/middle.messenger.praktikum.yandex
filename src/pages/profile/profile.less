@@ -1,4 +1,4 @@
-@import '../../utils/styles/styles.less';
+@import '../../common/styles/styles.less';
 
 body {
   margin: 0;
@@ -29,8 +29,8 @@ body {
     border-right: 1px solid @border-color;
 
     &__title {
-      font-family: @fontFamily;
-      color: @color-darkGrey;
+      font-family: @baseFontFamily;
+      color: @color-dark-grey;
     }
 
     &__form {
@@ -48,11 +48,12 @@ body {
   .nav-block {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 
     &__link {
-      font-family: @fontFamily;
+      font-family: @baseFontFamily;
       text-decoration: none;
-      color: @color-darkGrey;
+      color: @color-dark-grey;
       border-bottom: 1px solid transparent;
 
       &:hover {
@@ -66,18 +67,18 @@ body {
     display: flex;
     flex-direction: column;
     width: 220px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
     &__button {
       margin-bottom: 5px;
-      height: @elementHeight;
-      font-family: @fontFamily;
-      color: @color-darkGrey;
+      height: @baseElementHeight;
+      font-family: @baseFontFamily;
+      color: @color-dark-grey;
       border-radius: 20px;
       border: 1px solid @border-color;
 
       &:hover {
-        background: @button-hoveredColor;
+        background: @button-hovered-color;
         cursor: pointer;
       }
     }

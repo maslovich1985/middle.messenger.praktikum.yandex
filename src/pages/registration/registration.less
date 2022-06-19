@@ -1,4 +1,4 @@
-@import '../../utils/styles/styles.less';
+@import '../../common/styles/styles.less';
 
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
 
   .registration-form {
     width: 280px;
-    height: 540px;
+    height: 570px;
     background: @menu-color;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,8 @@ body {
     box-shadow: 2px 2px 3px @border-color;
 
     &__title {
-      font-family: @fontFamily;
-      color: @color-darkGrey;
+      font-family: @baseFontFamily;
+      color: @color-dark-grey;
     }
 
     &__form {
@@ -48,12 +48,12 @@ body {
 
     &__button {
       margin-bottom: 5px;
-      height: @elementHeight;
+      height: @baseElementHeight;
       border-radius: 20px;
       border: 1px solid @border-color;
 
       &:hover {
-        background: @button-hoveredColor;
+        background: @button-hovered-color;
         cursor: pointer;
       }
     }

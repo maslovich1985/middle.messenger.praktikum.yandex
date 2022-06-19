@@ -1,0 +1,75 @@
+/* roboto-regular - cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/roboto-v29-cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''), url('../../fonts/roboto-v29-cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/roboto-v29-cyrillic-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/roboto-v29-cyrillic-regular.woff') format('woff'),
+    /* Modern Browsers */ url('../../fonts/roboto-v29-cyrillic-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../../fonts/roboto-v29-cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+@baseFontFamily: 'Roboto';
+@baseFontSize: 16px;
+@baseElementHeight: 32px;
+@border-color: #e2e2e2;
+@menu-color: #f6f6f6;
+@color-secondary: #808080;
+@color-dark-grey: #333333;
+@input-border: 1px solid #a8a8a8;
+@input-background-color: #ffffff;
+@chat-item-hovered-color: #e4edfd;
+@button-hovered-color: #e4edfd;
+
+.input-label {
+  font-size: 13px;
+  font-family: @baseFontFamily;
+  color: @color-secondary;
+}
+
+.form-input {
+  width: 100%;
+  height: @baseElementHeight;
+  font-family: @baseFontFamily;
+  color: @color-dark-grey;
+  border-radius: 20px;
+  margin: 5px 0 10px 0;
+  padding: 0 10px;
+  outline: none;
+  border: @input-border;
+}
+
+.input-error {
+  border: 1px solid #ff0000;
+}
+
+.input-normal {
+  border: @input-border;
+}
+
+.formButton {
+  margin-bottom: 5px;
+  height: @baseElementHeight;
+  font-family: @baseFontFamily;
+  color: @color-dark-grey;
+  border-radius: 20px;
+  border: 1px solid @border-color;
+
+  &:hover {
+    background: @button-hovered-color;
+    cursor: pointer;
+  }
+}
+
+.base-link {
+  font-family: @baseFontFamily;
+  text-decoration: none;
+  color: @color-dark-grey;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid black;
+    color: black;
+  }
+}

@@ -1,5 +1,6 @@
-import Block from '../../utils/Block';
-import '../../utils/styles/styles.less';
+// import template from './button.hbs';
+import Block from '../../common/Block';
+import '../../common/styles/styles.less';
 
 interface IButtonProps {
   label: string;

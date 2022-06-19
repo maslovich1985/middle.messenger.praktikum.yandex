@@ -4,15 +4,21 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    /** Максимальная ширина строки */
     "max-len": [2, { "code": 180 }],
+    /** Разрешается использовать "_" в названии объекта если это свойство стоит после this */
     "no-underscore-dangle": [2, { "allowAfterThis": true }],
+    /** Warning если есть console.log */
     "no-console": "warn",
+    /** Обязательная пустая строка между return и предыдущим кодом */
     "padding-line-between-statements": [2, { "blankLine": "always", "prev": "*", "next": "return" }],
+    /** Отключить предупреждение CRLF (для работы в win)*/
     "linebreak-style": 0,
-    "no-restricted-exports": "off",
-    "no-param-reassign": "off",
-    "import/no-absolute-path": "off",
+    /** Отключить "Не использовать экспорт по дефолту "*/
     "import/prefer-default-export": "off",
     "class-methods-use-this": "off",
+    "no-restricted-exports": "off",
+    "no-param-reassign": "off",
+    "import/no-absolute-path": "off"
   }
 }

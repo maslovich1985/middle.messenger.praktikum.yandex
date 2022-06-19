@@ -1,4 +1,4 @@
 /dist
+**/*.min.js
 /node_modules
 /src/less.js
-**/*.min.js

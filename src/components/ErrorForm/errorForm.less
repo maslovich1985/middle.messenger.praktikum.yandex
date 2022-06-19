@@ -1,4 +1,4 @@
-@import '../../utils/styles/styles.less';
+@import '../../common/styles/styles.less';
 
 body {
   margin: 0;
@@ -23,19 +23,19 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    .error-text {
-      font-family: @fontFamily;
-      color: @color-darkGrey;
-      font-size: @fontSize;
-      padding: 0 10px;
-      text-align: justify;
-      margin: 0 10px;
-    }
-
     &__image {
       border: @input-border;
       width: 240px;
       height: 240px;
+    }
+
+    .error-text {
+      font-family: @baseFontFamily;
+      color: @color-dark-grey;
+      font-size: @baseFontSize;
+      padding: 0 10px;
+      text-align: justify;
+      margin: 0 10px;
     }
 
     nav {
@@ -44,10 +44,10 @@ body {
 
       a {
         text-decoration: none;
-        color: @color-darkGrey;
+        color: @color-dark-grey;
         border-bottom: 1px solid transparent;
-        font-family: @fontFamily;
-        font-size: @fontSize;
+        font-family: @baseFontFamily;
+        font-size: @baseFontSize;
 
         &:hover {
           border-bottom: 1px solid black;

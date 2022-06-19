@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel --no-cache ./src/index.html",
     "build": "parcel build src/index.html",
-    "start": "npm run build && node ./src/server.js"
+    "start": "npm install && npm run build && node ./src/server.js",
+    "test": "cross-env NODE_ENV=test mocha --require test/babel-register.js --require test/mock.js"
   },
   "repository": {
     "type": "git",
@@ -19,18 +20,31 @@
   "homepage": "https://github.com/maslovich1985/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "1.0.9",
-    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+    "@anikin/parcel-transformer-handlebars-precompile": "1.0.1",
+    "@babel/core": "7.17.8",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
+    "@babel/register": "7.17.7",
     "@parcel/config-default": "2.3.0",
     "@parcel/transformer-less": "2.3.0",
     "@parcel/transformer-sass": "2.2.1",
     "@tsconfig/recommended": "1.0.1",
+    "@types/chai": "4.3.0",
+    "@types/mocha": "9.1.0",
+    "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
+    "chai": "4.3.6",
+    "chai-dom": "^1.11.0",
+    "cross-env": "^7.0.3",
     "eslint": "8.9.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "16.1.0",
+    "jsdom": "^19.0.0",
+    "mocha": "9.2.2",
     "parcel": "2.2.1",
     "prettier": "2.5.1",
+    "regenerator-runtime": "^0.13.9",
     "stylelint": "^14.5.3",
     "typescript": "4.5.5"
   },

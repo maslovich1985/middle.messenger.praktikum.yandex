@@ -1,4 +1,4 @@
-import Block from '../../utils/Block';
+import Block from '../../common/Block';
 import '../../pages/messages/messages.less';
 
 export interface IMessageProps {

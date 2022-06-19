@@ -4,11 +4,11 @@
     "target": "es2017",
     "declaration": false,
     "module": "commonjs",
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true
   }
 }

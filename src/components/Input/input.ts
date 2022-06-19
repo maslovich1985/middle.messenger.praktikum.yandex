@@ -1,8 +1,8 @@
-import Block from '../../utils/Block';
-import '../../utils/styles/styles.less';
-import { validateInput } from '../../utils/utils';
+import Block from '../../common/Block';
+import '../../common/styles/styles.less';
+import { validateInput } from '../../common/utils';
 
-export type TInputType = 'email' | 'tel' | 'password' | 'text';
+export type TInputType = 'email' | 'text' | 'tel' | 'password';
 
 interface IInputProps {
   inputId: string;
